@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/contentBodyColor"
     tools:context=".ProfileConfiguration">
 
 
@@ -11,7 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="20dp">
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             style="@style/viewParent.headerText"
@@ -20,7 +24,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
             <TextView
@@ -70,25 +74,91 @@
                 style="@style/viewParent.headerText.settingsMiniTitle"
                 android:text="Profile" />
 
-            <TextView
+
+            <Button
+                android:id="@+id/EditProfileButton1"
                 style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableStart="@drawable/ic_edit_profile"
                 android:drawableLeft="@drawable/ic_edit_profile"
-                android:text="Edit Profile" />
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Edit Profile"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
+
 
             <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="Actions" />
+
+            <Button
+                android:id="@+id/ticket"
                 style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableLeft="@drawable/ic_edit_password"
-                android:text="Change Password" />
+                android:drawableStart="@drawable/ic_edit_profile"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Ticket"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
+
+            <Button
+                android:id="@+id/sold"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableStart="@drawable/ic_edit_profile"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Sold"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
+
+            <Button
+                android:id="@+id/EditProfileButton1"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableStart="@drawable/ic_edit_profile"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Edit Profile"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
 
             <TextView
+                style="@style/viewParent.headerText.settingsMiniTitle"
+                android:text="General" />
+
+            <Button
+                android:id="@+id/frequent_amounts"
                 style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableLeft="@drawable/ic_logout"
-                android:text="Logout" />
+                android:drawableStart="@drawable/ic_money"
+                android:drawableLeft="@drawable/ic_money"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Frequent amounts"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
 
-<!--            <TextView-->
-<!--                style="@style/viewParent.headerText.settingsMiniTitle"-->
-<!--                android:text="General" />-->
+            <Button
+                android:id="@+id/statement"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableStart="@drawable/ic_logout"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Statement"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle"
+                 />
 
+            <Button
+                android:id="@+id/EditProfileButton2"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:layout_gravity="start"
+                android:layout_marginBottom="1dp"
+                android:background="@color/contentBodyColor"
+                android:drawableStart="@drawable/ic_logout"
+                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Log out"
+                android:textAlignment="textStart"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle"
+                android:textSize="16sp" />
 
 
         </LinearLayout>
