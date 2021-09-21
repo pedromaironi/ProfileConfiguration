@@ -12,6 +12,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginRight="20dp"
+        android:paddingBottom="20dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +38,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
+                android:paddingLeft="10dp"
                 android:text="Edit profile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -367,12 +369,10 @@
                 android:layout_height="wrap_content"
                 android:text="Save"
                 android:layout_gravity="bottom"
-                android:background="@drawable/rounded"
-                android:textColor="@color/white_color"
+                android:background="@drawable/button_default"
+                android:textColor="@color/colorWhite"
                 android:backgroundTint="#2A7D79"
                 android:layout_margin="20dp"
-                android:clickable="true"
-                android:focusable="true"
                 />
         </LinearLayout>
 

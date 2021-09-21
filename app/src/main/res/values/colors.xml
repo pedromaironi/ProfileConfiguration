@@ -12,15 +12,10 @@
     <color name="miniTitle">#2A2E43</color>
     <color name="darkGray">#747474</color>
 
+    <!-- Buttons colors -->
+    <color name="primaryButtonColor">#2A7C77</color>
+    <color name="primaryButtonColorFocused">#20615D</color>
+    <color name="primaryButtonColorClicked">#20615D</color>
 
-    <color name="white_color">#FFFFFF</color>
-    <color name="black_color">#000000</color>
-    <color name="primary_color">#27259F</color>
-    <color name="primary_black_color">#000000</color>
-    <color name="gray_color">#D5CDCD</color>
-    <color name="gray_color_light">#E6E6E6</color>
-    <color name="primary_red_color">#c92a2a</color>
-    <color name="primary_blue_color">#364fc7</color>
-    <color name="primary_gray_color">#E7E7EA</color>
-    <color name="primary_rose_color">#AE38BC</color>
+
 </resources>
