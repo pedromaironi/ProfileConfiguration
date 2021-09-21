@@ -8,11 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-    </style>
-
     <!--styles for education app-->
     <style name="viewParent">
         <item name="android:layout_width">wrap_content</item>
@@ -86,4 +81,8 @@
     <style name="ButtonText" parent="TextAppearance.AppCompat">
         <item name="android:drawableRight">@drawable/ic_more</item>
     </style>
+
+    <style name="dropdown" parent="TextAppearance.AppCompat">
+    </style>
+
 </resources>

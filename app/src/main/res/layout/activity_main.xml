@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -78,8 +78,8 @@
             <Button
                 android:id="@+id/EditProfileButton1"
                 style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableStart="@drawable/ic_edit_profile"
-                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableStart="@drawable/ic_person"
+                android:drawableLeft="@drawable/ic_person"
                 android:drawableEnd="@drawable/ic_more"
                 android:drawableRight="@drawable/ic_more"
                 android:text="Edit Profile"
@@ -93,8 +93,8 @@
             <Button
                 android:id="@+id/ticket"
                 style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableStart="@drawable/ic_edit_profile"
-                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableStart="@drawable/ic_ticket"
+                android:drawableLeft="@drawable/ic_ticket"
                 android:drawableEnd="@drawable/ic_more"
                 android:drawableRight="@drawable/ic_more"
                 android:text="Ticket"
@@ -103,22 +103,58 @@
             <Button
                 android:id="@+id/sold"
                 style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableStart="@drawable/ic_edit_profile"
-                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableStart="@drawable/ic_baseline_monetization_on_24"
+                android:drawableLeft="@drawable/ic_baseline_monetization_on_24"
                 android:drawableEnd="@drawable/ic_more"
                 android:drawableRight="@drawable/ic_more"
                 android:text="Sold"
                 android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
 
             <Button
-                android:id="@+id/EditProfileButton1"
+                android:id="@+id/void_ticket"
                 style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableStart="@drawable/ic_edit_profile"
-                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableStart="@drawable/ic_bash"
+                android:drawableLeft="@drawable/ic_bash"
                 android:drawableEnd="@drawable/ic_more"
                 android:drawableRight="@drawable/ic_more"
-                android:text="Edit Profile"
-                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
+                android:text="Void ticket"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle"
+                 />
+
+            <Button
+                android:id="@+id/results"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableStart="@drawable/ic_menu"
+                android:drawableLeft="@drawable/ic_menu"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Result"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle"
+                />
+
+
+            <Button
+                android:id="@+id/winner"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableStart="@drawable/ic_winner"
+                android:drawableLeft="@drawable/ic_winner"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Winner #s"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle"
+                />
+
+            <Button
+                android:id="@+id/winner_tickets"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableLeft="@drawable/ic_check"
+                android:drawableStart="@drawable/ic_check"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Winner ticket"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle"
+                />
+
 
             <TextView
                 style="@style/viewParent.headerText.settingsMiniTitle"
@@ -135,10 +171,21 @@
                 android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
 
             <Button
+                android:id="@+id/printer"
+                style="@style/viewParent.headerText.settingsTextIcon"
+                android:drawableStart="@drawable/ic_printer"
+                android:drawableLeft="@drawable/ic_printer"
+                android:drawableEnd="@drawable/ic_more"
+                android:drawableRight="@drawable/ic_more"
+                android:text="Connect printer"
+                android:textAppearance="@style/viewParent.headerText.settingsMiniTitle" />
+
+
+            <Button
                 android:id="@+id/statement"
                 style="@style/viewParent.headerText.settingsTextIcon"
-                android:drawableStart="@drawable/ic_logout"
-                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableStart="@drawable/ic_finger"
+                android:drawableLeft="@drawable/ic_finger"
                 android:drawableEnd="@drawable/ic_more"
                 android:drawableRight="@drawable/ic_more"
                 android:text="Statement"
@@ -146,17 +193,14 @@
                  />
 
             <Button
-                android:id="@+id/EditProfileButton2"
+                android:id="@+id/logout"
                 style="@style/viewParent.headerText.settingsTextIcon"
-                android:layout_gravity="start"
                 android:layout_marginBottom="1dp"
-                android:background="@color/contentBodyColor"
-                android:drawableStart="@drawable/ic_logout"
-                android:drawableLeft="@drawable/ic_edit_profile"
+                android:drawableStart="@drawable/ic_power"
+                android:drawableLeft="@drawable/ic_power"
                 android:drawableEnd="@drawable/ic_more"
                 android:drawableRight="@drawable/ic_more"
                 android:text="Log out"
-                android:textAlignment="textStart"
                 android:textAppearance="@style/viewParent.headerText.settingsMiniTitle"
                 android:textSize="16sp" />
 
@@ -165,4 +209,4 @@
 
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
